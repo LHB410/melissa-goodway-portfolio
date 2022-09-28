@@ -32,6 +32,8 @@ gem 'devise'
 
 gem 'stripe_event'
 
+gem 'mail_form'
+
 gem "cloudinary"
 gem 'stripe'
 
