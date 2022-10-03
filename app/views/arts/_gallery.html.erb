@@ -1,0 +1,14 @@
+<div class="row">
+  <% @arts.each do |art| %>
+    <% 9.times do %>
+      <div class="col-6 col-md-4 col-lg-4">
+        <div class="card p-0">
+          <% if art.photo.attached?%>
+            <%= cl_image_tag art.photo.key, {remote: true, 'data-bs-toggle' => 'modal', 'data-bs-target' => '#artModal'} %>
+          <%end %>
+        </div>
+      </div>
+    <% end %>
+    <%= render 'shared/art_modal', art: art %>
+  <% end %>
+</div>

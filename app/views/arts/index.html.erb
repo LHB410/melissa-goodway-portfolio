@@ -1,20 +1,14 @@
-<div class="container">
-  <h1>Art</h1>
-  <div class="row">
-    <% @arts.each do |art| %>
-      <div class="col-6 col-md-4">
-        <div class="card">
-          <% if art.photo.attached?%>
-            <%= cl_image_tag art.photo.key %>
-          <%end %>
-          <div class="card-body">
-            <h5 class="card-title"><%= art.title %></h5>
-            <p class="card-text"><%= art.description %></p>
-            <p>Amount: <%= humanized_money_with_symbol(art.price) %></p>
-            <%= link_to "More details", art_path(art), class: "btn btn-primary" %>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
+
+<%= render 'reel' %>
+<div class="gallery-container">
+  <%= render 'animation' %>
 </div>
+<div class="gallery-container">
+  <%= render 'illustrations' %>
+</div>
+<div class="container">
+  <%= render 'store' %>
+  <%= render 'contacts/new' %>
+</div>
+
+

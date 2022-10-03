@@ -9,6 +9,16 @@ class ArtsController < ApplicationController
     @art = Art.find(params[:id])
   end
 
+  def art_modal
+    respond_to do |format|
+    format.html
+    format.js
+    @art = Art.find(params[:id])
+  end
+
+end
+
+
   private
 
   def art_params

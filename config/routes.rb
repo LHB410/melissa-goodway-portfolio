@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   mount StripeEvent::Engine, at: '/webhook'
   #FOR PRODCUCTION CHNAGE TO THIS.
   # mount StripeEvent::Engine, at: '/stripe-webhooks'
+  get "art/art_modal" => 'art#art_modal', :as => :art_modal
 end

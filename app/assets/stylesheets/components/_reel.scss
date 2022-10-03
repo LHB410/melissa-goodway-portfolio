@@ -1,0 +1,12 @@
+.reel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  object-fit: cover;
+  text-align: center;
+}
+
+#video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

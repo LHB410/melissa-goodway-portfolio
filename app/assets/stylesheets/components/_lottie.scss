@@ -1,0 +1,11 @@
+lottie-player::before{
+  overflow: initial;
+  background-color: white;
+  display: flex;
+}
+
+lottie-player::after {
+  overflow: none;
+  display: none;
+  background-color: transparent;
+}
