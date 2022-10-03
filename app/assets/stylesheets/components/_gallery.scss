@@ -1,5 +1,7 @@
 .gallery .card{
   --bs-card-border-width: 0px;
+  background-color: #ffe4a2;
+  position: relative;
 }
 
 .gallery-container {
@@ -10,3 +12,13 @@
 .gallery .row {
   --bs-gutter-x: 0rem;
 }
+
+.gallery .card :hover {
+  opacity: 30%;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+
+

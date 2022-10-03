@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-lewagon sticky-top">
+<nav class="navbar fixed-top">
   <%= link_to "#", class: "navbar-brand" do %>
     <div class="title">
       <h3>Melissa Goodway Art</h3>
@@ -6,24 +6,31 @@
       <h5>Illustrator <span>|</span> Animator <span>|</span> Artist</h5>
     </div>
   <% end %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="nav-menu mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#reel" data-controller="scroll-to">reel</a>
+        <a class="nav-link" href="#reel" data-controller="scroll-to">Reel</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#animation" data-controller="scroll-to">animation</a>
+        <a class="nav-link" href="#animation" data-controller="scroll-to">Animation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#illustration" data-controller="scroll-to">illustration</a>
+        <a class="nav-link" href="#illustration" data-controller="scroll-to">Illustration</a>
       </li>
       <li class="nav-item">
-         <a class="nav-link" href="#store" data-controller="scroll-to">store</a>
+         <a class="nav-link" href="#about" data-controller="scroll-to">About</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#store" data-controller="scroll-to">Store</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#contact" data-controller="scroll-to">Contact</a>
       </li>
     </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
   </div>
 </nav>

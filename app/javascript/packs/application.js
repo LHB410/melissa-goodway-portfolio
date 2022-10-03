@@ -19,4 +19,3 @@ require('@lottiefiles/lottie-player');
 require (bootstrap-modal)
 
 
-import '../custom/art_modal.js.erb';
