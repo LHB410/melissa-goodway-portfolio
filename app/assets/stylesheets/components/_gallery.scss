@@ -7,6 +7,7 @@
 .gallery-container {
   max-width: 100%;
   padding-bottom: 5rem;
+  scroll-behavior: smooth;
 }
 
 .gallery .row {
@@ -17,8 +18,5 @@
   opacity: 30%;
   transition: ease-in-out 0.3s;
 }
-
-
-
 
 
