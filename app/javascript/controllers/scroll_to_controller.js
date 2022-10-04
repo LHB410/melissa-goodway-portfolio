@@ -11,7 +11,7 @@ export default class extends Controller {
       offsetTop: 120,
     });
 
-}
   }
+}
 
 
