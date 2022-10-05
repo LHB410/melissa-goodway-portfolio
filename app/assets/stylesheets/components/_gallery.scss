@@ -7,10 +7,12 @@
 .gallery-container {
   max-width: 100%;
   padding-bottom: 5rem;
+  background-color: #fffaee;
 }
 
 .gallery .row {
   --bs-gutter-x: 0rem;
+  background-color: #fffaee;
 }
 
 .gallery .card :hover {

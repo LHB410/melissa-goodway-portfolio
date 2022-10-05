@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
   margin-top: 2rem;
 }
+.contact-container {
+  background: #fffaee;
+  padding: 40px 24px;
+}
 
 .contact-picture {
   max-width: 50%;
@@ -15,6 +19,8 @@
  #contact .card{
     flex-direction: row;
     border-radius: 8px;
+    background-color: #e6d4a9;
+    box-shadow: 2px 2px 4px grey;
   }
 
 @media only screen and (max-width: 768px) {

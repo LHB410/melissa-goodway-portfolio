@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background: #fffaee;
+  background-color: #fffaee;
   z-index: 100;
 }
 
@@ -26,13 +26,14 @@
 }
 
 .nav-item {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .nav-link{
     font-size: 1.6rem;
     font-weight: 200;
     color: #140A02;
+    padding: 0px 4px;
 }
 
 
@@ -67,7 +68,8 @@ hr {
 .navbar ul :hover {
   color: #4A4860;
   background: #e6d4a9;
-  box-shadow: 0px 4px 0px 0px #92876b;
+  box-shadow: 2px 4px 3px 0px #92876b;
+  transition: ease-in-out 0.3s;
 }
 
 
