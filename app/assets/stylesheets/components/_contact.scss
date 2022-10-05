@@ -1,3 +1,14 @@
-#contact .container {
+#contact{
   scroll-behavior: smooth;
+  margin-top: 2rem;
 }
+
+.contact-picture {
+object-fit: cover;
+flex-direction: column;
+}
+
+.form {
+  flex-direction: column;
+}
+
