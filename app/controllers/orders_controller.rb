@@ -1,18 +1,22 @@
 class OrdersController < ApplicationController
   def create
     art = Art.find(params[:art_id])
-    order  = Order.create!(art: art, amount: art.price, state: 'pending', user: current_user)
+    order  = Order.create!(art: art, amount: art.price.cents, state: 'pending', user: current_user)
 
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
+        shipping_address_collection: {
+          allowed_countries: ['US', 'CA'],
+        },
+        shipping_options: [
+          {
+            shipping_rate: "shr_1LpWQgHTvXipvTsOdxp5wPih",
+          },
+        ],
       line_items: [{
-        # name: art.title,
-        # images: [art.photo],
-        # amount: art.price_cents,
-        # currency: 'usd',
         price_data: {
           currency: 'usd',
-          unit_amount: 2000,
+          unit_amount: art.price.cents,
           product_data:
           {
             name: art.title,

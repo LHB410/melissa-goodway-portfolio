@@ -66,8 +66,8 @@ hr {
 
 .navbar ul :hover {
   color: #4A4860;
-  background: #f4e29e;
-  box-shadow: 0px 4px 0px 0px #817b46;
+  background: #e6d4a9;
+  box-shadow: 0px 4px 0px 0px #92876b;
 }
 
 
@@ -98,8 +98,9 @@ hr {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
+    }
 
-        .hamburger.active .bar:nth-child(2) {
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
@@ -110,19 +111,25 @@ hr {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    }
 
     .nav-menu.active {
         left: 0;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
+    }
+
+    .nav-item a #contact {
+      margin-bottom: 4rem;
     }
 
     .hamburger {
         display: block;
         cursor: pointer;
     }
-
+    body {
+      background-color: black;
+      opacity: 50;
+    }
 }

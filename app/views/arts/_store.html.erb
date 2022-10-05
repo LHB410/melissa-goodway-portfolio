@@ -4,7 +4,7 @@
     <% @arts.each do |art| %>
       <% 9.times do %>
         <div class="col-6 col-md-4">
-          <div class="card">
+          <div class="card mb-2">
             <% if art.photo.attached?%>
               <%= cl_image_tag art.photo.key %>
             <%end %>
