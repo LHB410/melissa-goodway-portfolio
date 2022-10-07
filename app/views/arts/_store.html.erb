@@ -7,21 +7,19 @@
   </div>
   <div class="row">
     <% @arts.each do |art| %>
-      <% 9.times do %>
-        <div class="col-6 col-md-4">
-          <div class="card mb-2">
-            <% if art.photo.attached?%>
-              <%= cl_image_tag art.photo.key %>
-            <%end %>
-            <div class="card-body">
-              <h5 class="card-title"><%= art.title %></h5>
-              <p class="card-text"><%= art.description %></p>
-              <p>Amount: <%= humanized_money_with_symbol(art.price) %></p>
-              <%= link_to "More details", art_path(art), class: "my-btn" %>
-            </div>
+      <div class="col-6 col-md-4">
+        <div class="card mb-2">
+          <% if art.photo.attached?%>
+            <%= cl_image_tag art.photo.key %>
+          <%end %>
+          <div class="card-body">
+            <h5 class="card-title"><%= art.title %></h5>
+            <p class="card-text"><%= art.description %></p>
+            <p>Amount: <%= humanized_money_with_symbol(art.price) %></p>
+            <%= link_to "More details", art_path(art), class: "my-btn" %>
           </div>
         </div>
-      <% end %>
+      </div>
     <% end %>
   </div>
 </div>
