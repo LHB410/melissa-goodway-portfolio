@@ -1,0 +1,41 @@
+.my-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #140A02;
+  background-color: #e6d4a9;
+  border-radius: 8px;
+  transition: ease-in-out 0.3s;
+}
+
+.my-btn:hover {
+  color: #fffeee !important;
+  background-color: #8c8064 !important;
+  box-shadow: 2px 4px 3px 0px #92876b !important;
+  text-decoration: none !important;
+  transition: ease-in-out 0.3s !important;
+}
+
+
+input.my-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #140A02;
+  background-color: #fffeee;
+  border-radius: 8px;
+  transition: ease-in-out 0.3s;
+  border: 1 1 black;
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+  border-image: none
+}
+
+input.my-btn:hover {
+  color: #fffeee !important;
+  background-color: #8c8064 !important;
+  box-shadow: 2px 4px 3px 0px #92876b !important;
+  text-decoration: none !important;
+  transition: ease-in-out 0.3s !important;
+}

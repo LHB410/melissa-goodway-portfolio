@@ -1,18 +1,20 @@
-<div class="container py-3">
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
+<div class="container">
+  <div class="card">
+    <div class="card-product">
       <% if @art.photo.attached?%>
-        <%= cl_image_tag @art.photo.key, class: "img"%>
+        <%= cl_image_tag @art.photo.key, class: "img img-fluid"%>
       <%end %>
+      <div class="card-product-infos">
+        <h1><%= @art.title %></h1>
+        <p><%= @art.description %></p>
+        <p><strong>Amount: <%= humanized_money_with_symbol(@art.price) %></strong></p>
+        <%= form_with url: orders_path do %>
+          <%= hidden_field_tag 'art_id', @art.id %>
+          <%= submit_tag 'Purchase', class: 'my-btn' %>
+        <% end %>
+      </div>
     </div>
-    <div class="col-sm-12 col-md-6">
-      <h1><%= @art.title %></h1>
-      <p><%= @art.description %></p>
-      <p>Amount: <%= humanized_money_with_symbol(@art.price) %></p>
-    </div>
-    <%= form_with url: orders_path do %>
-      <%= hidden_field_tag 'art_id', @art.id %>
-      <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
-    <% end %>
   </div>
+
 </div>
+

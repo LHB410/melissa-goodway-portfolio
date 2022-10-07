@@ -1,18 +1,16 @@
 .gallery .card{
   --bs-card-border-width: 0px;
-  background-color: #e6d4a9;
+  background-color: #fffeee;
   position: relative;
 }
 
 .gallery-container {
   max-width: 100%;
-  padding-bottom: 5rem;
-  background-color: #fffaee;
 }
 
 .gallery .row {
-  --bs-gutter-x: 0rem;
-  background-color: #fffaee;
+  --bs-gutter-x: 0.4rem;
+  --bs-gutter-y: 0.4rem;
 }
 
 .gallery .card :hover {

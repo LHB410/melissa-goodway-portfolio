@@ -36,6 +36,14 @@ art_info.each do |art|
   created_art.photo.attach(io: File.open(art["photo"]), filename: "#{art["title"]}.jpg", content_type: "image/jpg")
 end
 
+# create a JSON file with all of the info
+# [
+#   {title: "",
+#   description: "",
+#   photo: "",
+#   price: ""
+#   category: ""}
+# ]
 
 
 # parse it using JSON.parse(file)

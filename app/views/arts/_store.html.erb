@@ -1,5 +1,10 @@
 <div id="store">
-  <h1 class="text-center">Store</h1>
+  <div class="pb-4">
+    <h1>Store</h1>
+    <p>Here is the store log in or create account to buy some wonderful art.</p>
+    <%= link_to "Login", new_user_session_path, class: "my-btn" %>
+    <%= link_to "Create account",  new_user_registration_path, class:"my-btn"  %>
+  </div>
   <div class="row">
     <% @arts.each do |art| %>
       <% 9.times do %>
@@ -12,7 +17,7 @@
               <h5 class="card-title"><%= art.title %></h5>
               <p class="card-text"><%= art.description %></p>
               <p>Amount: <%= humanized_money_with_symbol(art.price) %></p>
-              <%= link_to "More details", art_path(art), class: "btn btn-primary" %>
+              <%= link_to "More details", art_path(art), class: "my-btn" %>
             </div>
           </div>
         </div>

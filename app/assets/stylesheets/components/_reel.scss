@@ -5,9 +5,22 @@
   object-fit: cover;
   text-align: center;
   scroll-behavior: smooth;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  inline-size: -webkit-fill-available;
 }
 
-#video {
-  aspect-ratio: 16 / 9;
+
+.reel iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+
+}
+
+#reel .container {
+  max-inline-size: -webkit-fill-available;
 }
