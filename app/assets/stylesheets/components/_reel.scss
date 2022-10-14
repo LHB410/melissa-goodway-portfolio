@@ -2,24 +2,20 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  object-fit: cover;
+  // object-fit: cover;
   text-align: center;
   scroll-behavior: smooth;
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 75.25%; /* 16:9 */
   height: 0;
-  inline-size: -webkit-fill-available;
+  // inline-size: -webkit-fill-available;
 }
 
-
-.reel iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+#player_html5_api {
+  object-fit: cover;
   height: 100%;
-
+  width: 100%;
 }
+
 
 #reel .container {
   max-inline-size: -webkit-fill-available;
